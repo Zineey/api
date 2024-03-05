@@ -22,6 +22,7 @@
  header("Access-Control-Allow-Origin: *");
  header("Content-Type: application/json; charset=utf8");
  header("Access-Control-Allow-Methods: GET, POST, PATCH");
+ header("Access-Control-Allow-Headers: *");
 
     // Include required modules
     require_once "./modules/get.php";
