@@ -32,17 +32,6 @@ class Post extends GlobalMethods{
         $this->pdo = $pdo;
     }
     
-   
-
-    /**
-     * Add a new employee with the provided data.
-     *
-     * @param array|object $data
-     *   The data representing the new employee.
-     *
-     * @return array|object
-     *   The added employee data.
-     */
     public function addAccount($data){
         $sql = "INSERT INTO tbl_accounts(fld_empcode,fld_username,fld_password, fld_role) VALUES (?,?,?,?)";
         try{
