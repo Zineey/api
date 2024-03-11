@@ -97,10 +97,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
                     // Return JSON-encoded data for adding employees
                     echo json_encode($post->addAccount($data));
                     break;
-                // case 'editemployee':
-                //     // Return JSON-encoded data for adding employees
-                //     echo json_encode($post->edit_employee($data, $request[1]));
-                //     break;
                 
                 case 'deleteaccount':
                     echo json_encode($post->deleteaccount($request[1]));
